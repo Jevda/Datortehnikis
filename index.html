@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Uzdevumi</title>
+    <!-- Pieslēdzam CSS failu -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🚀 JavaScript Uzdevumi</h1>
+        <p>Izvēlies uzdevumu, ko vēlies izpildīt!</p>
+        <button class="menu-btn" onclick="testPrompt()" style="margin-top: 10px; background: #e74c3c;">
+            🧪 Tests - vai prompt darbojas?
+        </button>
+    </div>
+
+    <!-- Rezultātu rādīšanas vieta - AUGŠĀ -->
+    <div class="result-area" id="resultArea">
+        <h3>📋 Rezultāts:</h3>
+        <pre id="resultContent"></pre>
+        <button class="clear-btn" onclick="notiritRezultatus()">Notīrīt rezultātus</button>
+    </div>
+
+    <div class="menu-section">
+        <!-- Pirmā grupa - Pamata uzdevumi -->
+        <div class="menu-group">
+            <h2>📝 1. Pamata JavaScript Uzdevumi</h2>
+            <div class="menu-buttons">
+                <button class="menu-btn" onclick="sveiciensVards()">
+                    <span class="emoji">👋</span>Sveiciens pēc vārda
+                </button>
+                <button class="menu-btn" onclick="dubultoSkaitli()">
+                    <span class="emoji">✖️</span>Dubulto skaitli
+                </button>
+                <button class="menu-btn" onclick="paraVaiNepara()">
+                    <span class="emoji">🔢</span>Pāra vai nepāra skaitlis?
+                </button>
+                <button class="menu-btn" onclick="vecumaPaarbaude()">
+                    <span class="emoji">🎂</span>Vecuma pārbaude
+                </button>
+                <button class="menu-btn" onclick="kursLielaaks()">
+                    <span class="emoji">⚖️</span>Kurš skaitlis ir lielāks?
+                </button>
+                <button class="menu-btn" onclick="atzimesNovertejums()">
+                    <span class="emoji">📚</span>Atzīmes novērtējums
+                </button>
+                <button class="menu-btn" onclick="parolesPaarbaude()">
+                    <span class="emoji">🔐</span>Paroles pārbaude
+                </button>
+                <button class="menu-btn" onclick="temperaturasNovertejums()">
+                    <span class="emoji">🌡️</span>Temperatūras novērtējums
+                </button>
+                <button class="menu-btn" onclick="dalaamibaPaarbaude()">
+                    <span class="emoji">➗</span>Dalāmība ar 3 un 5
+                </button>
+                <button class="menu-btn" onclick="piesleegsanasSistema()">
+                    <span class="emoji">👤</span>Pieslēgšanās sistēma
+                </button>
+            </div>
+        </div>
+
+        <!-- Otrā grupa - Cikli -->
+        <div class="menu-group">
+            <h2>🔄 2. Uzdevumi par Cikliem</h2>
+            <div class="menu-buttons">
+                <button class="menu-btn" onclick="forCikls1Lidz20()">
+                    <span class="emoji">🔢</span>For cikls 1-20
+                </button>
+                <button class="menu-btn" onclick="whileCiklsLidz15()">
+                    <span class="emoji">⏹️</span>While cikls līdz 15
+                </button>
+                <button class="menu-btn" onclick="paraSkaitliSumma()">
+                    <span class="emoji">➕</span>Pāra skaitļu summa
+                </button>
+                <button class="menu-btn" onclick="sveiksTikReizes()">
+                    <span class="emoji">👋</span>Sveiks N reizes
+                </button>
+                <button class="menu-btn" onclick="uzminetSkaitli()">
+                    <span class="emoji">🎯</span>Uzminēt skaitli
+                </button>
+                <button class="menu-btn" onclick="akmensSkeresPatrina()">
+                    <span class="emoji">🗿</span>Akmens-Šķēres-Papīrītis
+                </button>
+            </div>
+        </div>
+
+        <!-- Trešā grupa - Masīvi -->
+        <div class="menu-group">
+            <h2>📊 3. Uzdevumi ar Masīviem</h2>
+            <div class="menu-buttons">
+                <button class="menu-btn" onclick="trisSkaitlesMasivs()">
+                    <span class="emoji">3️⃣</span>3 skaitļi masīvā
+                </button>
+                <button class="menu-btn" onclick="diviVardiMasivs()">
+                    <span class="emoji">💬</span>2 vārdi masīvā
+                </button>
+                <button class="menu-btn" onclick="pieciSkaitliSumma()">
+                    <span class="emoji">5️⃣</span>5 skaitļu summa
+                </button>
+                <button class="menu-btn" onclick="augliApgrieztaSeciba()">
+                    <span class="emoji">🍎</span>Augļi apgrieztā secībā
+                </button>
+                <button class="menu-btn" onclick="atzimesVidejais()">
+                    <span class="emoji">📊</span>Atzīmju vidējais
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pieslēdzam visus JavaScript failus -->
+    <script src="js/main.js"></script>
+    <script src="js/uzdevumi-1.js"></script>
+    <script src="js/uzdevumi-2.js"></script>
+    <script src="js/uzdevumi-3.js"></script>
+</body>
+</html>

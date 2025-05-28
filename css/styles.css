@@ -1,0 +1,171 @@
+/* Vispārējie stili - pamata noformējums visai lapai */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pamata body stili */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Galvenais konteiners */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* Galvenes stili */
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Izvēlnes sadaļas stili */
+.menu-section {
+    padding: 30px;
+}
+
+/* Katra uzdevumu grupa */
+.menu-group {
+    margin-bottom: 40px;
+}
+
+.menu-group h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Pogu izvietojums - režģis */
+.menu-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+/* Izvēlnes pogas */
+.menu-btn {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* Pogas efekts, kad uzbrauc ar peli */
+.menu-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+    background: linear-gradient(45deg, #2980b9, #3498db);
+}
+
+/* Pogas efekts, kad nospiež */
+.menu-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Результātu rādīšanas zona - NAВЕРХУ */
+.result-area {
+    margin: 0 30px 30px 30px;
+    padding: 20px;
+    background: #e8f5e8;
+    border-radius: 10px;
+    border-left: 5px solid #27ae60;
+    border: 2px solid #27ae60;
+    display: none; /* Sākumā paslēpta */
+}
+
+.result-area h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Koda rādīšanas lauks */
+.result-area pre {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+}
+
+/* Notīrīt pogas stili */
+.clear-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.clear-btn:hover {
+    background: #c0392b;
+}
+
+/* Emoji ikonu stili */
+.emoji {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+/* Responsīvs dizains mazākiem ekrāniem */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .menu-section {
+        padding: 20px;
+    }
+
+    .menu-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-btn {
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+}
